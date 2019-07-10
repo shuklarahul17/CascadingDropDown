@@ -13,6 +13,7 @@ public partial class Cascading : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        //This program use SQL Server and calling Stored Proc and populating data in Drop down list 
         if (!IsPostBack)
         {
             ddlcontinent.DataSource= GetData("spGetContinents", null);
